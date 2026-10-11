@@ -1,7 +1,7 @@
 export const notesData = [
   {
     id: 1,
-    number: "01",
+    number: "I",
     sectionRef: "GE 112-121",
     title: "Aguante, paciencia y mansedumbre",
     subtitle: "Paz interior y solidez frente a la hostilidad del mundo",
@@ -16,7 +16,7 @@ export const notesData = [
   },
   {
     id: 2,
-    number: "02",
+    number: "II",
     sectionRef: "GE 122-128",
     title: "Alegría y sentido del humor",
     subtitle: "El gozo del Evangelio frente al pesimismo y la amargura",
@@ -31,7 +31,7 @@ export const notesData = [
   },
   {
     id: 3,
-    number: "03",
+    number: "III",
     sectionRef: "GE 129-139",
     title: "Audacia y fervor (Parresía)",
     subtitle: "La valentía apostólica para vencer el letargo y la comodidad",
@@ -46,7 +46,7 @@ export const notesData = [
   },
   {
     id: 4,
-    number: "04",
+    number: "IV",
     sectionRef: "GE 140-146",
     title: "En comunidad",
     subtitle: "Caminar juntos: nadie se santifica ni se salva solo",
@@ -61,7 +61,7 @@ export const notesData = [
   },
   {
     id: 5,
-    number: "05",
+    number: "V",
     sectionRef: "GE 147-157",
     title: "En oración constante",
     subtitle: "El encuentro íntimo que alimenta y purifica el corazón misionero",

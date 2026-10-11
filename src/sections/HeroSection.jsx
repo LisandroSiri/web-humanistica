@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Search, Menu, ChevronDown, Cross, Sparkles, BookOpen } from 'lucide-react';
 import '../styles/hero.css';
-
+import logo from '../assets/logo-vatican.png';
 export const HeroSection = () => {
   const scrollToNotes = (e) => {
     e.preventDefault();
@@ -25,12 +25,12 @@ export const HeroSection = () => {
       {/* 1. Header superior idéntico a "La SANTA SEDE" */}
       <header className="vatican-topbar">
         <a href="#hero" className="vatican-logo-text">
-          <em>La</em> SANTA SEDE
+          <em>Gaudete et</em> exsultate
         </a>
 
         {/* Emblema Vaticano central */}
         <div className="vatican-center-emblem" title="Santa Sede">
-          <Cross size={26} color="#9B7428" />
+          <img style={{ width: '80%', height: '80%' }} src={logo} alt="Logo de la Santa Sede" />
         </div>
 
         <div className="vatican-topbar-right">

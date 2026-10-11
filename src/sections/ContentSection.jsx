@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { notesData } from '../data/notesData';
-import { ScrollStackCard } from '../components/ScrollStackCard';
-import { Scroll, Sparkles } from 'lucide-react';
+import { Scroll } from 'lucide-react';
+import { SacredBook } from '../components/SacredBook';
 import '../styles/scroll-stack.css';
 
 export const ContentSection = () => {
@@ -35,16 +34,8 @@ export const ContentSection = () => {
           </p>
         </motion.div>
 
-        {/* Contenedor apilado de pergaminos (Scroll Stack) */}
-        <div className="stack-cards-container">
-          {notesData.map((item, index) => (
-            <ScrollStackCard
-              key={item.id}
-              item={item}
-              index={index}
-            />
-          ))}
-        </div>
+        {/* Libro interactivo con páginas blandas (page-flip) */}
+        <SacredBook />
       </div>
     </section>
   );
