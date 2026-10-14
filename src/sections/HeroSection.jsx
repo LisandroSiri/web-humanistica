@@ -34,15 +34,9 @@ export const HeroSection = () => {
         </div>
 
         <div className="vatican-topbar-right">
-          <div className="vatican-lang-selector">
-            <span>ESPAÑOL</span>
-            <ChevronDown size={14} />
-          </div>
-
-          <div className="vatican-icons-row">
-            <Search size={20} style={{ cursor: 'pointer' }} />
-            <Menu size={22} style={{ cursor: 'pointer' }} />
-          </div>
+          <a href="#hero" className="vatican-logo-text">
+          <em>Formación </em> humanistica IV
+        </a>
         </div>
       </header>
 

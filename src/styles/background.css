@@ -84,3 +84,47 @@
     transform: translate(-49%, -10px) scale(0.98);
   }
 }
+
+/* ==========================================================================
+   RESPONSIVE — BACKGROUND
+   ========================================================================== */
+@media (max-width: 768px) {
+  .bg-candle-glow-1 {
+    width: 400px;
+    height: 350px;
+  }
+
+  .bg-candle-glow-2 {
+    width: 280px;
+    height: 280px;
+  }
+
+  .bg-candle-glow-3 {
+    width: 350px;
+    height: 320px;
+  }
+
+  .bg-parchment-texture {
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-candle-glow-1 {
+    width: 280px;
+    height: 250px;
+  }
+
+  .bg-candle-glow-2 {
+    width: 200px;
+    height: 200px;
+    right: 3%;
+  }
+
+  .bg-candle-glow-3 {
+    width: 250px;
+    height: 220px;
+    left: 3%;
+  }
+}
+
