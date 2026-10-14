@@ -6,10 +6,10 @@ import {
   HelpCircle, 
   CheckCircle2, 
   RotateCcw, 
-  HeartHandshake, 
   ArrowRight,
   Cross,
-  Sparkles
+  Sparkles,
+  Compass
 } from 'lucide-react';
 import '../styles/quiz.css';
 
@@ -223,10 +223,17 @@ export const QuizSection = () => {
                     <span>Reanudar el Cuestionario</span>
                   </button>
 
-                  <button onClick={() => triggerConfetti()} className="btn-sacred-primary">
-                    <HeartHandshake size={18} />
-                    <span>¡Alabar y Celebrar!</span>
-                  </button>
+                  <a
+                    href="#ruleta-compromiso"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('ruleta-compromiso')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    className="btn-sacred-primary"
+                  >
+                    <Compass size={18} />
+                    <span>Asumir un Compromiso en la Ruleta</span>
+                  </a>
                 </div>
               </motion.div>
             )}

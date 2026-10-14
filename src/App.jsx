@@ -3,6 +3,7 @@ import { HeroSection } from './sections/HeroSection';
 import { AnimatedBackground } from './components/AnimatedBackground';
 import { ContentSection } from './sections/ContentSection';
 import { QuizSection } from './sections/QuizSection';
+import { RouletteSection } from './sections/RouletteSection';
 import { FooterSection } from './sections/FooterSection';
 import './styles/index.css';
 
@@ -18,6 +19,7 @@ function App() {
         <main>
           <ContentSection />
           <QuizSection />
+          <RouletteSection />
         </main>
       </div>
 
