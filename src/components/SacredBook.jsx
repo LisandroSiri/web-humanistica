@@ -158,7 +158,7 @@ export const SacredBook = () => {
   return (
     <div className="sacred-book-wrapper">
       {/* Barra de control y navegación litúrgica */}
-      <div className="book-controls-bar">
+      <div className="book-controls-bar" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <div className="book-controls-main">
           <button
             type="button"
@@ -257,7 +257,7 @@ export const SacredBook = () => {
                 {/* Cabecera de la página */}
                 <div className="page-header-row">
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <IconComp size={16} color="#8c6717" />
+                    <IconComp size={16} color="var(--color-gold-primary)" />
                     <span className="page-roman-num">Nota {note.number}</span>
                   </div>
                   <span className="page-badge-pill">{note.badge}</span>

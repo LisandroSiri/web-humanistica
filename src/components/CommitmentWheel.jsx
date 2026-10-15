@@ -100,8 +100,8 @@ export const CommitmentWheel = ({ onCommitmentSelected, isSpinning, setIsSpinnin
 
     // Alternar elegantes tonalidades litúrgicas
     const isEven = index % 2 === 0;
-    const sliceBg = isEven ? '#2A1F13' : '#1D160E';
-    const textColor = isEven ? '#F4E2A6' : '#E8DEC8';
+    const sliceBg = isEven ? '#ffffff' : '#eaf0f7';
+    const textColor = '#1c2e45';
 
     return {
       ...item,
@@ -130,15 +130,15 @@ export const CommitmentWheel = ({ onCommitmentSelected, isSpinning, setIsSpinnin
             <path
               d="M20 50L4 12C2 7.5 5.5 2 10.5 2H29.5C34.5 2 38 7.5 36 12L20 50Z"
               fill="url(#goldPointerGrad)"
-              stroke="#FFF3CD"
+              stroke="#dce6f1"
               strokeWidth="2"
             />
-            <circle cx="20" cy="14" r="5" fill="#1A1305" stroke="#D4AF37" strokeWidth="1.5" />
+            <circle cx="20" cy="14" r="5" fill="#1c4170" stroke="#275791" strokeWidth="1.5" />
             <defs>
               <linearGradient id="goldPointerGrad" x1="20" y1="2" x2="20" y2="50" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#FFF2C6" />
-                <stop offset="0.5" stopColor="#D4AF37" />
-                <stop offset="1" stopColor="#8A6412" />
+                <stop stopColor="#8fb2dc" />
+                <stop offset="0.5" stopColor="#275791" />
+                <stop offset="1" stopColor="#1c4170" />
               </linearGradient>
             </defs>
           </svg>
@@ -159,9 +159,9 @@ export const CommitmentWheel = ({ onCommitmentSelected, isSpinning, setIsSpinnin
           >
             <defs>
               <radialGradient id="hubShine" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="#FFF9E6" />
-                <stop offset="70%" stopColor="#D4AF37" />
-                <stop offset="100%" stopColor="#7A5812" />
+                <stop offset="0%" stopColor="#ffffff" />
+                <stop offset="70%" stopColor="#6f93c0" />
+                <stop offset="100%" stopColor="#275791" />
               </radialGradient>
             </defs>
 
@@ -172,7 +172,7 @@ export const CommitmentWheel = ({ onCommitmentSelected, isSpinning, setIsSpinnin
                 <path
                   d={slice.pathData}
                   fill={slice.sliceBg}
-                  stroke="rgba(212, 175, 55, 0.45)"
+                  stroke="rgba(39, 87, 145, 0.35)"
                   strokeWidth="1.5"
                 />
 
@@ -188,22 +188,6 @@ export const CommitmentWheel = ({ onCommitmentSelected, isSpinning, setIsSpinnin
 
                 {/* Texto del sector orientado radialmente hacia afuera */}
                 <g transform={`rotate(${slice.midAngle}, ${center}, ${center})`}>
-                  {/* Número Romano cerca del borde exterior */}
-                  <text
-                    x={center + radius - 24}
-                    y={center}
-                    fill="#F4E2A6"
-                    fontSize="13"
-                    fontFamily="var(--font-heading-cinzel)"
-                    fontWeight="800"
-                    textAnchor="middle"
-                    dominantBaseline="central"
-                    transform={`rotate(90, ${center + radius - 24}, ${center})`}
-                    style={{ textShadow: '0 1px 4px rgba(0,0,0,0.8)' }}
-                  >
-                    {slice.roman}
-                  </text>
-
                   {/* Nombre breve del compromiso */}
                   <text
                     x={center + radius - 80}
@@ -216,7 +200,7 @@ export const CommitmentWheel = ({ onCommitmentSelected, isSpinning, setIsSpinnin
                     textAnchor="middle"
                     dominantBaseline="central"
                     transform={`rotate(0, ${center + radius - 80}, ${center})`}
-                    style={{ textShadow: '0 2px 5px rgba(0,0,0,0.9)' }}
+                    style={{ textShadow: '0 1px 2px rgba(255,255,255,0.75)' }}
                   >
                     {slice.shortLabel}
                   </text>
@@ -225,7 +209,7 @@ export const CommitmentWheel = ({ onCommitmentSelected, isSpinning, setIsSpinnin
                   <text
                     x={center + 65}
                     y={center}
-                    fill="rgba(212, 175, 55, 0.6)"
+                    fill="rgba(39, 87, 145, 0.65)"
                     fontSize="9"
                     textAnchor="middle"
                     dominantBaseline="central"
@@ -242,7 +226,7 @@ export const CommitmentWheel = ({ onCommitmentSelected, isSpinning, setIsSpinnin
               cy={center}
               r={radius}
               fill="none"
-              stroke="#D4AF37"
+              stroke="#275791"
               strokeWidth="2"
             />
           </svg>

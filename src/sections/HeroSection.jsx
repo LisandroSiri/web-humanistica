@@ -55,7 +55,7 @@ export const HeroSection = () => {
           </h1>
 
           <div className="vatican-document-subtitle">
-            Gaudete et Exsultate • La Santidad en Zapatillas
+            Gaudete et Exsultate 
           </div>
 
           <p className="vatican-hero-description">

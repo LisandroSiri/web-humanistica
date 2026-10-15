@@ -20,7 +20,7 @@
   transform: translate(-50%, 0);
   width: 750px;
   height: 600px;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.14) 0%, rgba(200, 125, 37, 0.07) 45%, transparent 75%);
+  background: radial-gradient(circle, rgba(39, 87, 145, 0.1) 0%, rgba(74, 130, 196, 0.05) 45%, transparent 75%);
   filter: blur(100px);
   border-radius: 50%;
   animation: candleFlicker 10s ease-in-out infinite alternate;
@@ -32,7 +32,7 @@
   right: 8%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(168, 90, 50, 0.1) 0%, rgba(212, 175, 55, 0.04) 50%, transparent 70%);
+  background: radial-gradient(circle, rgba(74, 130, 196, 0.07) 0%, rgba(39, 87, 145, 0.03) 50%, transparent 70%);
   filter: blur(110px);
   border-radius: 50%;
   animation: candleFlicker 14s ease-in-out infinite alternate-reverse;
@@ -44,7 +44,7 @@
   left: 5%;
   width: 650px;
   height: 600px;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.09) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(39, 87, 145, 0.06) 0%, transparent 65%);
   filter: blur(120px);
   border-radius: 50%;
 }
@@ -54,19 +54,19 @@
   position: absolute;
   inset: 0;
   background-image: 
-    radial-gradient(circle at 50% 25%, transparent 0%, rgba(19, 16, 11, 0.85) 90%),
-    linear-gradient(rgba(212, 175, 55, 0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(212, 175, 55, 0.015) 1px, transparent 1px);
+    radial-gradient(circle at 50% 25%, transparent 0%, rgba(39, 87, 145, 0.025) 90%),
+    linear-gradient(rgba(39, 87, 145, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(39, 87, 145, 0.015) 1px, transparent 1px);
   background-size: 100% 100%, 60px 60px, 60px 60px;
-  opacity: 0.9;
+  opacity: 0.6;
 }
 
 /* Chispas doradas flotantes (luz de vigilia) */
 .candle-sparkle {
   position: absolute;
   border-radius: 50%;
-  background: rgba(244, 226, 166, 0.65);
-  box-shadow: 0 0 8px rgba(212, 175, 55, 0.75);
+  background: rgba(74, 130, 196, 0.4);
+  box-shadow: 0 0 8px rgba(39, 87, 145, 0.35);
   pointer-events: none;
 }
 
@@ -127,4 +127,3 @@
     left: 3%;
   }
 }
-

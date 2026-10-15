@@ -21,12 +21,12 @@
   max-width: 980px;
   margin-bottom: 2rem;
   padding: 1.2rem 1.6rem;
-  background: rgba(29, 23, 16, 0.75);
+  background: rgba(255, 253, 248, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--color-border-sacred);
   border-radius: var(--radius-card);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(20, 20, 20, 0.12);
 }
 
 .book-controls-main {
@@ -47,7 +47,7 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   color: var(--color-gold-light);
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(39, 87, 145, 0.08);
   border: 1px solid var(--color-border-sacred);
   border-radius: var(--radius-pill);
   cursor: pointer;
@@ -56,10 +56,10 @@
 }
 
 .book-btn:hover:not(:disabled) {
-  background: rgba(212, 175, 55, 0.22);
+  background: rgba(39, 87, 145, 0.14);
   border-color: var(--color-gold-primary);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 4px 14px rgba(39, 87, 145, 0.18);
 }
 
 .book-btn:disabled {
@@ -100,7 +100,7 @@
   letter-spacing: 0.05em;
   color: var(--color-text-muted);
   background: transparent;
-  border: 1px solid rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(39, 87, 145, 0.15);
   border-radius: var(--radius-subtle);
   cursor: pointer;
   transition: all var(--transition-gentle);
@@ -109,15 +109,15 @@
 .book-tab-btn:hover {
   color: var(--color-gold-light);
   border-color: var(--color-gold-deep);
-  background: rgba(212, 175, 55, 0.08);
+  background: rgba(39, 87, 145, 0.08);
 }
 
 .book-tab-btn.active {
-  color: #1a140d;
-  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold-deep) 100%);
+  color: #ffffff;
+  background: linear-gradient(135deg, #4a82c4 0%, var(--color-gold-deep) 100%);
   border-color: var(--color-gold-primary);
   font-weight: 700;
-  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 2px 10px rgba(39, 87, 145, 0.2);
 }
 
 /* Escenario del libro / Atril */
@@ -136,8 +136,8 @@
 /* Contenedor donde monta PageFlip */
 .book-mount-container {
   margin: 0 auto;
-  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.85),
-              0 0 40px rgba(212, 175, 55, 0.1);
+  box-shadow: 0 25px 60px -15px rgba(20, 20, 20, 0.28),
+              0 0 40px rgba(39, 87, 145, 0.08);
   border-radius: 6px;
 }
 
@@ -194,7 +194,7 @@
   bottom: 14px;
   left: 14px;
   right: 14px;
-  border: 1px solid rgba(184, 134, 11, 0.28);
+  border: 1px solid rgba(39, 87, 145, 0.25);
   pointer-events: none;
 }
 
@@ -205,7 +205,7 @@
   bottom: 3px;
   left: 3px;
   right: 3px;
-  border: 1px dashed rgba(184, 134, 11, 0.18);
+  border: 1px dashed rgba(39, 87, 145, 0.16);
 }
 
 /* Encabezado de página */
@@ -215,14 +215,14 @@
   justify-content: space-between;
   padding-bottom: 0.8rem;
   margin-bottom: 0.9rem;
-  border-bottom: 1px solid rgba(184, 134, 11, 0.25);
+  border-bottom: 1px solid rgba(39, 87, 145, 0.22);
 }
 
 .page-roman-num {
   font-family: var(--font-heading-cinzel);
   font-size: 0.85rem;
   font-weight: 700;
-  color: #8c6717;
+  color: #275791;
   letter-spacing: 0.1em;
 }
 
@@ -231,17 +231,17 @@
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #6d4e13;
-  background: rgba(184, 134, 11, 0.12);
+  color: #1c4170;
+  background: rgba(39, 87, 145, 0.09);
   padding: 0.2rem 0.65rem;
   border-radius: var(--radius-pill);
-  border: 1px solid rgba(184, 134, 11, 0.22);
+  border: 1px solid rgba(39, 87, 145, 0.2);
 }
 
 .page-ref-text {
   font-family: var(--font-heading-cinzel);
   font-size: 0.75rem;
-  color: #8a7761;
+  color: #6b6b6b;
 }
 
 /* Título de la nota */
@@ -257,7 +257,7 @@
   font-family: var(--font-serif-sacred);
   font-size: 0.98rem;
   font-style: italic;
-  color: #7a5416;
+  color: #275791;
   margin-bottom: 0.9rem;
   display: block;
 }
@@ -292,14 +292,14 @@
   line-height: 0.85;
   padding-right: 0.4rem;
   padding-top: 0.15rem;
-  color: #9c2e2e;
+  color: #275791;
   font-weight: 700;
 }
 
 /* Cita destacada */
 .page-quote-box {
-  background: rgba(184, 134, 11, 0.07);
-  border-left: 2px solid #b8860b;
+  background: rgba(39, 87, 145, 0.06);
+  border-left: 2px solid #275791;
   padding: 0.65rem 0.9rem;
   font-family: var(--font-serif-sacred);
   font-size: 0.9rem;
@@ -316,7 +316,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 0.6rem;
-  border-top: 1px solid rgba(184, 134, 11, 0.2);
+  border-top: 1px solid rgba(39, 87, 145, 0.18);
   font-family: var(--font-heading-cinzel);
   font-size: 0.78rem;
   color: #8c7352;
@@ -335,7 +335,7 @@
 
 .cover-sacred-cross {
   font-size: 1.8rem;
-  color: #b8860b;
+  color: #275791;
   margin-bottom: 0.8rem;
   line-height: 1;
 }
@@ -345,7 +345,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #8c6717;
+  color: #275791;
   margin-bottom: 1.1rem;
 }
 
@@ -358,7 +358,7 @@
 }
 
 .cover-ornament {
-  color: #b8860b;
+  color: #275791;
   font-size: 1.2rem;
   margin: 0.8rem 0;
 }
@@ -376,7 +376,7 @@
   font-family: var(--font-heading-cinzel);
   font-size: 0.85rem;
   letter-spacing: 0.12em;
-  color: #785a1e;
+  color: #1c4170;
   margin-top: 1.2rem;
   text-transform: uppercase;
 }
@@ -387,10 +387,10 @@
   font-size: 0.92rem;
   line-height: 1.5;
   color: #352a1c;
-  background: rgba(184, 134, 11, 0.05);
+  background: rgba(39, 87, 145, 0.04);
   padding: 0.85rem 1rem;
   border-radius: 4px;
-  border: 1px solid rgba(184, 134, 11, 0.15);
+  border: 1px solid rgba(39, 87, 145, 0.14);
 }
 
 /* Indicación de interacción */
@@ -632,4 +632,3 @@
     margin-top: 0.75rem;
   }
 }
-
